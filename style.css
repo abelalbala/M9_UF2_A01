@@ -1,3 +1,30 @@
-.fondo {
-    background-color: black;
+* {
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+   background-image: url('./imgs/fondo.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.mainTitle {
+    text-align: center;
+    font-family: serif;
+}
+
+.mainTitle > img {
+    margin-top: -100px;
+}
+
+.imgCara > img {
+   
+    width: 350px;
+    height: 350px;
 }

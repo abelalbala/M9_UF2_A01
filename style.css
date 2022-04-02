@@ -4,11 +4,10 @@
     padding: 0;
     position: relative;
 }
-
 html, body {
     height: 100%;
     width: 100%;
-   background-image: url('./imgs/fondo.jpg');
+    background-image: url('./img/fondo1.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -16,15 +15,34 @@ html, body {
 
 .mainTitle {
     text-align: center;
-    font-family: serif;
 }
 
 .mainTitle > img {
-    margin-top: -100px;
+    height: 100px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "img conejo iframe";
 }
 
 .imgCara > img {
-   
+    grid-area: img;
+    width: 400px;
+    height: 400px;
+}
+
+.grid > img {
+    grid-area: conejo;
+}
+
+iframe {
+    grid-area: iframe;
+    position: absolute;
     width: 350px;
-    height: 350px;
+    height: 330px;
+    right: 0;
+    margin-top: 100px;
 }
